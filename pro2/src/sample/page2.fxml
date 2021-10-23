@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.HBox?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.awt.Choice?>
+<?import javafx.collections.FXCollections?>
+<?import sample.Main?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Page2" style="-fx-background-color:lightsteelblue">
+   <top>
+       <Label fx:id="GeneralInfo"/>
+   </top>
+    <center>
+        <VBox alignment="CENTER_LEFT" spacing="20">
+            <HBox spacing="10">
+                <TextField fx:id="Name"  promptText="Enter the Name" onMouseEntered="#gInfo" onMouseExited="#gInfo2"/>
+                <Label fx:id="Info"/>
+                <Button text="select" fx:id="Select" onAction="#Disable" style="-fx-background-color: lightgray" textFill="black"/>
+            </HBox>
+            <Label  textFill="red" fx:id="Wrong" />
+            <CheckBox text="delete selected shape"  fx:id="Delete" disable="true"/>
+            <Label text="Changing Color"/>
+            <TextField promptText="Color" disable="true" fx:id="Color"/>
+            <Label text="Editing Circle:"/>
+            <TextField  promptText="new radius size" fx:id="rSize"  disable="true"/>
+            <Label text="Editing Rectangle:" />
+            <TextField promptText="new height" fx:id="rHeight" disable="true"/>
+            <TextField promptText="new width" fx:id="rWidth" disable="true"/>
+            <Label text="Editing Square:"/>
+            <TextField promptText="new length"  fx:id="sLength" disable="true"/>
+            <Label text="Editing Ellipse:"/>
+            <TextField promptText="new first radius" fx:id="fRadius" disable="true"/>
+            <TextField promptText="new second radius" fx:id="sRadius" disable="true"/>
+            <Label text="enter the new x,y component"/>
+            <TextField promptText="X"   fx:id="xComponent" disable="true"/>
+            <TextField fx:id="yComponent" disable="true" promptText="Y"/>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="BOTTOM_RIGHT">
+            <padding>
+                <Insets bottom="10" right="10"/>
+            </padding>
+            <Button fx:id="Save" text="Save"  onAction="#Change" disable="true" style="-fx-background-color: lightgray" textFill="black"/>
+            <Button fx:id="Back" text="Menu"  onAction="#Change" style="-fx-background-color: lightgray" textFill="black"/>
+        </HBox>
+    </bottom>
+
+
+
+</BorderPane>

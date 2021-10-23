@@ -1,0 +1,37 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ComboBox?>
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml"
+           style="-fx-background-color: lightsteelblue">
+    <top>
+        <Label text="Created By Ehsan Hosseini/Nima Shadman"  textFill="black"  alignment="TOP_CENTER" BorderPane.alignment="TOP_CENTER" style="-fx-font-size:25"/>
+    </top>
+    <center>
+        <Label text="WELLCOME"  textFill="black"  alignment="CENTER" BorderPane.alignment="CENTER" style="-fx-font-size:100"/>
+    </center>
+
+<bottom>
+    <HBox spacing="10" alignment="BOTTOM_RIGHT" >
+        <padding>
+            <Insets bottom="10" right="10"/>
+        </padding>
+        <Button fx:id="Edit" text="Edit" onAction="#ChangeScene" style="-fx-background-color: lightgray" textFill="black"/>
+        <Button fx:id="Start" text="Start" onAction="#ChangeScene" style="-fx-background-color: lightgray" textFill="black"/>
+        <Button fx:id="Help" text="Help" onAction="#OnButtonClicked" style="-fx-background-color: lightgray" textFill="black"/>
+        <Button fx:id="Exit" text="Exit" onAction="#OnButtonClicked" style="-fx-background-color: lightgray" textFill="black"/>
+
+    </HBox>
+</bottom>
+</BorderPane>

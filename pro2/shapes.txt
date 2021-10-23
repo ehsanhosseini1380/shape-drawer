@@ -1,0 +1,5 @@
+name=square1 color=purple type=square position=(100,100) length=200 
+color=yellow name=rectangle1 position=(100,600) type=rectangle length=300 height=200 
+radius1=70 type=ellipse name=ellipse1 position=(600,200) radius2=80 color=blue  
+type=circle name=circle1 color=red position=(800,800) radius=150 
+name=circle2 type=circle 
